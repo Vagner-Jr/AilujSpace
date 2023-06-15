@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 36.98%, rgba(0, 0, 0, 0) 100%);
   background-repeat: no-repeat;
 }
 
@@ -49,4 +49,27 @@ header p {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 5.6rem;
+}
+
+main ul {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+li {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+}
+
+li a {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: black;
 }
