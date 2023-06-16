@@ -22,7 +22,14 @@
       <form>
         <section id="input-container">
           <div class="input-wrapper mail">
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              minlength="11"
+              required
+            />
           </div>
           <div class="input-wrapper password">
             <input
@@ -30,6 +37,8 @@
               name="password"
               id="password"
               placeholder="Senha"
+              minlength="8"
+              required
             />
           </div>
           <a id="forgot-password" href="">Esqueci minha senha</a>
