@@ -9,45 +9,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ailuj Space</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <div id="app">
-      <img
-        src="https://images.unsplash.com/photo-1522337956741-4b9ce9700652?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1134&q=80"
-        alt="imagem de objetos utilizanos na clínica"
-      />
       <header>
-        <img
-          src="./assets/juliaRodrigues.jpeg"
-          alt="imagem de julia rodrigues"
-        />
-        <h1>Julia Rodrigues</h1>
-        <p>Clínica de estética Ailuj Space</p>
+        <h1>Ailuj Space</h1>
+        <p>clínica de estética</p>
       </header>
-      <main>
-        <ul id="links">
-          <li>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/juliarodriguesspace/"
-              >instagram</a
-            >
-          </li>
-          <li>horários</li>
-          <li>serviços</li>
-          <li>
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=5524998256571&text=Ol%C3%A1!%20"
-              >whatsapp</a
-            >
-          </li>
-        </ul>
-      </main>
-      <footer>
+      <form>
+        <section id="input-container">
+          <div class="input-wrapper mail">
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+          <div class="input-wrapper password">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Senha"
+            />
+          </div>
+          <a id="forgot-password" href="">Esqueci minha senha</a>
+        </section>
+        <section id="button-container">
+          <div class="submit-wrapper create">
+            <input type="button" id="create" value="Create" />
+          </div>
+          <div class="submit-wrapper submit">
+            <input
+              type="submit" id="submit" value="Login" onclick="redirect()" />
+          </div>
+        </section>
         <ul id="icons">
           <li>
             <a
@@ -71,6 +66,10 @@
             </a>
           </li>
         </ul>
+      </form>
+      <footer>
+        <p>Welcome you!</p>
+        <p>by Ailuj</p>
       </footer>
     </div>
   </body>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-h1: clamp(2.4rem, 3vw, 4rem);
+  --font-p: clamp(1.2rem, 1.5vw, 2.0rem);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: no-repeat;
+}
+
+#app {
+  min-width: 320px;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 4rem;
+}
+
+header {
+  margin: 10rem auto 4rem;
+  width: fit-content;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+form {
+  padding: 4rem;
+  border-radius: 10px;
+  background: rgba(122, 122, 122, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+form p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  background: none;
+}
+
+.input-wrapper + .input-wrapper, .submit-wrapper + .submit-wrapper  {
+  margin-top: 2.4rem;
+}
+
+#forgot-password {
+  display: inline-block;
+  margin: 2.4rem 0 6.4rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.submit-wrapper input {
+  width: 100%;
+  padding: 2.4rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  transition: .2s;
+}
+
+.submit-wrapper input:hover {
+  opacity: 0.9;
+}
+
+#create {
+  background: #969696;
+}
+
+#submit {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 4rem;
+  list-style: none;
+}
+
+#icons li a {
+  text-decoration: none;
+}
+
+li {
+  transition: .1s ease;
+}
+
+li:hover {
+  scale: 1.02;
+}
+
+footer {
+  width: fit-content;
+  margin: 6.4rem auto 0;
+  text-align: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+footer p:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
