@@ -11,16 +11,16 @@
 }
 
 body {
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
   background-repeat: no-repeat;
 }
 
 #app {
-  min-width: 320px;
-  max-width: 960px;
+  width: 100%;
   margin: auto;
-  padding: 0 4rem;
+  padding: 4rem 4rem;
 }
 
 header {
@@ -47,20 +47,13 @@ form {
   backdrop-filter: blur(5px);
 }
 
-form p {
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
 .input-wrapper input {
   width: 100%;
   padding: 1rem 0;
   border: none;
   border-bottom: 1px solid;
   outline: none;
+  color: rgba(0, 0, 0, 0.6);
   background: none;
 }
 
@@ -69,19 +62,29 @@ form p {
 }
 
 #forgot-password {
+  width: 100%;
   display: inline-block;
   margin: 2.4rem 0 6.4rem;
-  color: rgba(0, 0, 0, 0.6);
+  text-align: end;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  transition: .3s;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#forgot-password:hover {
+  color: #000;
 }
 
 .submit-wrapper input {
   width: 100%;
   padding: 2.4rem;
-  color: white;
   border: none;
   border-radius: 2px;
   transition: .2s;
+  color: white;
 }
 
 .submit-wrapper input:hover {
@@ -130,4 +133,25 @@ footer p:nth-child(1) {
 footer p:nth-child(1) {
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-areas: 'foto form';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body::before {
+    grid-area: foto;
+    content: '';
+    display: block;
+    height: 100%;
+    background: #000;
+  }
+
+  #app {
+    grid-area: form;
+  }
+  
 }
